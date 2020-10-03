@@ -60,7 +60,7 @@ distro arch file:
 # sftpcmp -U mgardner -H 172.21.5.4 -P 2020 -human -log -T . /Data/Accounting
 
 # Run the program
-run +args="sftpcmp_2020-10-01_023702_UTC.log":
+run +args="*.log":
 	just _term-wipe
 	go run main.go {{args}}
 
